@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Achievement Point Coaching</title>
+<link rel="stylesheet" type="text/css" href="nav.css">
+
+<!-- Font Awesome CDN for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+                h1, h2 {
+            color: #005f73;
+       }
+        .content{
+display: none;
+}
+.ResourseText{
+  border: 5px outset red;
+  background-color: lightblue;
+  text-align: center;
+  cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Achievement Point Coaching</h1>
+        <nav>
+            <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+            <a href="directorMessage.html">Director Desk</a>
+	    <a href="Service.html">Service</a>
+            <a href="Resourse.html">Resourse</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+	<div class="ResourseText" id="ResourseText">
+	<h3><p onclick="ResourseLink('ResourseLinkDAV')">Previous Year Question of Agarsen DAV Public School, Ramgarh</p></h3>
+	</div><br>
+	<div class="content" id="ResourseLinkDAV">
+	<a href="https://agrasendavps.in/6C1C7C64-EBC4-4767-A476-4BA686D70957/CMS/Page/Question-Bank" 				target="_blank">Click Here for Previous Year Question of Agarsen DAV Public School</a>
+	</div><br>
+
+	<div class="ResourseText">
+	<h3><p onclick="ResourseLink('CBSEResourseLink')">CBSE Class 10</p></h3>
+	</div><br>
+	<div class="content" id="CBSEResourseLink">
+	<a href="https://www.cbse.gov.in/cbsenew/question-paper.html" target="_blank">Click Here For CBSE class 10 	Previous Year Question</a>
+	</div><br>
+
+	<div class="ResourseText">
+	<h3><p onclick="ResourseLink('ITResourseLink')">Class 10: IT Notes</p></h3>
+	</div><br>
+	<div class="content" id="ITResourseLink">
+	<a href="https://drive.google.com/file/d/1E9u6w84qqBkltVeBfGOIzw0HApIC4ir0/view?usp=sharing">Click Here For CBSE class 10 IT Notes 	Previous Year Question</a>
+	</div><br>
+
+</div>
+    
+
+    <footer>
+        <p>© 2025 Achievement Point Coaching. All rights reserved.</p><br>
+<a href="https://www.youtube.com/@apointinstitute"><i class="fa-brands fa-youtube" style="font-size:24px; color:Red"></i></a>
+	
+    </footer>
+</body>
+
+<script>
+function ResourseLink(arg) {
+  var x = document.getElementById(arg);
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+</html>

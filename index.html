@@ -4,41 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Achievement Point Coaching</title>
+<link rel="stylesheet" type="text/css" href="nav.css">
+
 <!-- Font Awesome CDN for icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0; padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-        header {
-            background: #005f73;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-			position: sticky;
-	        top: 0px;
-	    
-        }
-        nav {
-            margin-top: 10px;
-	    
-        }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-	header h1{
-            color: white;
-        }
-        .container {
+           .container {
             max-width: 900px;
             margin: 20px auto;
             padding: 0 15px;
@@ -63,15 +34,7 @@
             padding: 10px;
             border-radius: 6px;
         }
-        footer {
-            text-align: center;
-            padding: 15px 0;
-            background: #005f73;
-            color: white;
-            <--position: fixed;-->
-            width: 100%;
-            bottom: 0;
-        }
+
         form label {
             display: block;
             margin-top: 10px;
@@ -114,7 +77,18 @@
             object-fit: cover;
             box-shadow: 0 2px 8px rgba(34,66,124,0.08);
         }
+.youtube_embed{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+  border: 2px outset red;
+  background-color: lightblue;
+aspect-ratio: 16/9:
+width: 100%
+padding: 0px 0px 0px 5px;
 
+}
+.youtube_video{padding: 5px;}
     </style>
 </head>
 <body>
@@ -124,7 +98,7 @@
             <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
             <a href="directorMessage.html">Director Desk</a>
 	    <a href="Service.html">Service</a>
-            <a href="achievers.html">Our Achievers</a>
+            <a href="Resourse.html">Resourse</a>
             <a href="gallery.html">Gallery</a>
             <a href="contact.html">Contact</a>
         </nav>
@@ -185,6 +159,15 @@ Besides academic coaching, Achievement Point also emphasizes the development of 
             </ul>
         </section>
 
+     <!--   <section id="testimonials">
+            <h2>Client Testimonials</h2>
+            <ul class="testimonial-list">
+                <li>"Education at Achievement Point Coaching builds the future, confidence, and dreams through study, problem-solving, and tests. It empowers clear thinking, wise action, and self-discovery in a supportive, family-like environment." - Sachin,Class 10, Modern Public School</li>
+                <li>"Great career guidance that helped me choose the right path." - Ankit, Class 10, Modern Public School</li>
+                <li>"Motivational sessions were inspiring and practical." - Aditya,Class 10, Agarsen DAV Public School</li>
+            </ul>
+        </section> -->
+
 <section class="message">
         <!-- testimonials's photo -->
         <img src="sachin.jpeg" alt="TestiAchievement Point Coaching" class="testimonials-img">
@@ -222,13 +205,30 @@ Thanku!!"</p>
 "</p>
  </section>
 
-<!--<div style="text-align: center;">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/VkOs2QrcfZw?si=eoALdWzOOg_TKZ0K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>-->
+<div class="youtube_embed">
+	<div class="youtube_video" style="text-align: center;">
+	<iframe  src="https://www.youtube.com/embed/VkOs2QrcfZw?si=eoALdWzOOg_TKZ0K" title="YouTube video player" 	frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 	web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	</div>
+	<div class="youtube_video" style="text-align: center;">
+	<iframe  src="https://www.youtube.com/embed/w768MwyIYlc?si=jCJMJSSic1UsB4Bc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	</div>
+</div>
+
 
         <section id="contact">
             <h2>Contact Us</h2>
+           <!--  <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required />
 
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form> -->
 		<P><h4>Achievement Point<br>Behind Raj Nursing Home,<br>Bharechnagar Sandi,<br>Ramgarh 				Jharkhnad-829117.<br><br>Mob:+91-8709934014</p></h4>
         </section>
 
@@ -242,6 +242,3 @@ Thanku!!"</p>
     </footer>
 </body>
 </html>
-
-
-
