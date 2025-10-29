@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <title>Achievement Point Coaching</title>
 
 
@@ -34,6 +35,8 @@
 
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
     <style>
            .container {
             max-width: 900px;
@@ -61,7 +64,8 @@
             border-radius: 6px;
         }
 
-       	.achievements li {
+   
+	.achievements li {
     background: #e9f5ff;
     border-left: 6px solid #007bff;
     margin-bottom: 15px;
@@ -92,7 +96,7 @@ padding: 0px 0px 0px 5px;
 .youtube_video{padding: 5px;}
 
 .popup{
-background: white;
+background: #ffcce0;
 width: 50%;
 padding: 5px;
 position: absolute;
@@ -130,7 +134,20 @@ color: red;
     background-color: rgba(0,0,0,0.5); /* Black background with opacity */
     z-index: 9999; /* Sit on top */
   }
-
+.new-tag{ background: red;
+color: white;
+font-weight: bold;
+animation: blink 1s infinite;
+margin: 8px;
+font-size:0.8em;
+padding: 2px 2px;
+border radius: 20px;
+text-align: center;
+}
+@keyframes blink{
+0%, 100% {opacity: 1;}
+50% {opacity: 0;}
+}
 
     </style>
 
@@ -139,7 +156,7 @@ color: red;
 <div class="popupOverlay" id="popupOverlay">
 <div class="popup" id="popup">
 <button  id="closePopup">&times;</button>
-<h1 class="animate__animated animate__heartBeat">Admission Open</h1>
+<h1 class="animate__animated animate__heartBeat"><b>Admission Open</b></h1>
 <h3>Join our hand to create a world of Achievers</h3>
 <a href="contact.html" style="font-weight: bold; color: red; font-size: 20px; text-decoration: none;">Click to Contact Us</a></div>
 </div>
@@ -154,14 +171,45 @@ color: red;
             <a href="contact.html">Contact</a>
         </nav>
     </header>
+<div style="background: #ffcce0; font-weight: Bold; text-decoration: none;">
+<marquee behavior="scroll" direction="left"; onmouseover="this.stop()"; onmouseout="this.start()";"><span class="new-tag">New </span>Admission Open: <a href="contact.html" style="text-decoration: none; color: auto;">Click to Contact</a>; <span class="new-tag">New </span>Offer: Free Registration till 25 Nov. 2025</marquee>
+</div>
+<div class="container">
+<section style="text-align: center">
+<h2 class="animate__animated animate__rubberBand" style="color: red">Welcome to Achivement Point</h2>
+<h4 class="animate__animated animate__rubberBand">(The world where we nourish your loved one)</h4>
 
-    <div class="container">
+</section>
 
+    
+
+<!-- Bootstrap-->
 <section id="feature">
-	<div>
-	<img src="banner.png" alt="Achievement Point banner" width="100%" height="60%" >
-	</div>
-        
+	<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://lh3.googleusercontent.com/p/AF1QipNI3N1fIIw4tOapiDHySEPsA0Z5bVoaXArnO4zh=s1360-w1360-h1020-rw" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="Deepotsav.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="banner.png" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+</section>	
+
+
 	
 	</section>
 
@@ -210,7 +258,15 @@ Besides academic coaching, Achievement Point also emphasizes the development of 
             </ul>
         </section>
 
-     
+     <!--   <section id="testimonials">
+            <h2>Client Testimonials</h2>
+            <ul class="testimonial-list">
+                <li>"Education at Achievement Point Coaching builds the future, confidence, and dreams through study, problem-solving, and tests. It empowers clear thinking, wise action, and self-discovery in a supportive, family-like environment." - Sachin,Class 10, Modern Public School</li>
+                <li>"Great career guidance that helped me choose the right path." - Ankit, Class 10, Modern Public School</li>
+                <li>"Motivational sessions were inspiring and practical." - Aditya,Class 10, Agarsen DAV Public School</li>
+            </ul>
+        </section> -->
+
 <section class="message">
         <!-- testimonials's photo -->
         <img src="sachin.jpeg" alt="TestiAchievement Point Coaching" class="testimonials-img">
@@ -260,7 +316,8 @@ Thanku!!"</p>
 
         <section id="contact">
             <h2>Contact Us</h2>
-          		<P><h4>Achievement Point<br>Behind Raj Nursing Home,<br>Bharechnagar Sandi,<br>Ramgarh 				Jharkhnad-829117.<br><br>Mob:+91-8709934014</p></h4>
+
+		<P><h4>Achievement Point<br>Behind Raj Nursing Home,<br>Bharechnagar Sandi,<br>Ramgarh 				Jharkhnad-829117.<br><br>Mob:+91-8709934014</p></h4>
         </section>
 
 
@@ -268,14 +325,22 @@ Thanku!!"</p>
 
     <footer>
         <p>Quick Link</p>
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSfvwfGFmw95xYwrq2krxDrhJig9v-9aaDf8v5CRAZ4rkJDlkQ/viewform?usp=header">Enquiry form</a><br>
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSe8AnLZ_AloSup6BJnFj3qlhyW41QCIG3mqOdYKhzjiWPIScg/viewform?usp=header">Complaint</a><br>
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSclpDhVfpvDhZ5ZQkqZ4gYVOEj4eJlFtncvllX0nipX1bdyug/viewform?usp=header">feedback</a><br>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-around; text-align: left;">
+<div>
+<a href="index.html">> Home</a><br>
+<a href="contact.html">> Contact Us</a><br>
+<a href="Resource.html">> Download</a>
+</div>
+<div>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSfvwfGFmw95xYwrq2krxDrhJig9v-9aaDf8v5CRAZ4rkJDlkQ/viewform?usp=header">> Enquiry form</a><br>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSe8AnLZ_AloSup6BJnFj3qlhyW41QCIG3mqOdYKhzjiWPIScg/viewform?usp=header">> Complaint</a><br>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSclpDhVfpvDhZ5ZQkqZ4gYVOEj4eJlFtncvllX0nipX1bdyug/viewform?usp=header">> Student feedback</a>
+</div>
+</div>
 <a href="https://www.youtube.com/@apointinstitute"><i class="fa-brands fa-youtube" style="font-size:24px; color:Red"></i></a>
-
-	
     </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 <script>
   // Show the popup automatically after a delay (e.g., 2 seconds)
   window.addEventListener('load', function() {
@@ -289,8 +354,8 @@ Thanku!!"</p>
     document.getElementById('popupOverlay').style.display = 'none';
   });
 </script>
-
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
 </body>
 </html>
-
