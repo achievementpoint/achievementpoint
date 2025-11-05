@@ -73,6 +73,7 @@ flex-wrap: wrap; justify-content: center;
 margin:10px;
 width: 70px;
 height: auto;
+	overflow: hidden;
 }
 
 .headerimage img{
@@ -90,3 +91,4 @@ top: 0%;
 0%, 25%, 75%, 100% {opacity: 1;}
 50% {opacity: 0;}
 }
+
