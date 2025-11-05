@@ -12,7 +12,7 @@
             text-align: center;
 	    position: sticky;
 	    top: 0px;
-	    z-index: 9999;
+	    z-index: 9000;
 	    
         }
 	header h1{
@@ -39,7 +39,7 @@
             <--position: fixed;-->
 	    position: fixed;
             width: 100%;
-            bottom: 0;
+            bottom: 0%;
         }
 footer a {
   color: white;
@@ -51,4 +51,42 @@ footer a {
 
 footer a:hover {
   color: #8ecae6;
+}
+
+
+.new-tag{ background: red;
+color: white;
+font-weight: bold;
+animation: blink 1s infinite;
+margin: 8px;
+font-size:0.8em;
+padding: 2px 2px;
+border radius: 20px;
+text-align: center;
+}
+
+.headercontainer{
+display: flex;
+flex-wrap: wrap; justify-content: center;
+}
+.headerimage{
+margin:10px;
+width: 70px;
+height: auto;
+}
+
+.headerimage img{
+object-fit: cover;
+max-height: 100%;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+left: 0%;
+top: 0%;
+
+}
+
+@keyframes blink{
+0%, 25%, 75%, 100% {opacity: 1;}
+50% {opacity: 0;}
 }
