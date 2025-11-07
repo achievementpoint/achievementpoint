@@ -62,7 +62,15 @@ border: 2px solid black;
 	.FreeDemo{
 	animation: blink 1s infinite;
 	}
-        
+.CallUs{
+display: none;
+}
+@media (max-width: 600px) {
+  /* CSS styles for cell phones */
+.CallUs{
+display: inline;
+}
+}
     </style>
 </head>
 <body>
@@ -96,7 +104,7 @@ border: 2px solid black;
 <h2 class="animate__animated animate__rubberBand" style="color: red"><b>Trust of Several Parents</b></h2>
 <h4 class="animate__animated animate__rubberBand">Achievement Point</h4>
 <div  style="display: flex; flex-wrap: wrap; justify-content: space-between">
-<div style="position: relative; text-align: center; background: #ff0000; width: 5rem; border: 2px solid #ff0000;
+<div class="CallUs" style="position: relative; text-align: center; background: #ff0000; width: 5rem; border: 2px solid #ff0000;
   border-radius: 30px; cursor: pointer;">
 <b> <a href="tel:+918709934014" style="text-decoration: none; color: white;">Call Us</a></b>
 </div>
@@ -151,5 +159,6 @@ border: 2px solid black;
 
 </body>
 </html>
+
 
 
