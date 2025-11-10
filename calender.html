@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Director's Message | Achievement Point Coaching</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="Achievement Point is one of the best and leading institute for class 6th to 12th in Bharechnagar (Sandi), Ramgarh, Jharkhand. It provides all possible best guidance to our students (Achievers), so that they could excel in examination and career. We shape our Achivers so that they could face all forthcoming challenges in their life. We wish to join your hand to create a world of Achievers" />
+
+    <meta name="keywords" content="Achivement Point, Coaching, Ramgarh, Coaching at Ramgarh
+    " />
+    <meta http-equiv="content-language" content="en" />
+    <meta name="email" content="apointinstitute@gmail.com" />
+    <meta name="expires" content="never" />
+    <meta name="distribution" content="global" />
+    <meta name="copyright" content="Achievement Point" />
+    <meta name="abstract"
+        content=""Achievement Point is one of the best and leading institute for class 6th to 12th in Bharechnagar (Sandi), Ramgarh, Jharkhand. It provides all possible best guidance to our students (Achievers), so that they could excel in examination and career. We shape our Achivers so that they could face all forthcoming challenges in their life. We wish to join your hand to create a world of Achievers" />
+    <meta name="owner" content="Achivement Point, Ramgarh" />
+    <meta name="author" content="Achivement Point, Ramgarh, https://achievementpoint.github.io/achievementpoint/">
+    <meta name="publisher" content="https://achievementpoint.github.io/achievementpoint/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Achievement Point
+    " />
+    <meta property="og:description" content=""Achievement Point is one of the best and leading institute for class 6th to 12th in Bharechnagar (Sandi), Ramgarh, Jharkhand. It provides all possible best guidance to our students (Achievers), so that they could excel in examination and career. We shape our Achivers so that they could face all forthcoming challenges in their life. We wish to join your hand to create a world of Achieverss" />
+    <meta property="og:url" content="https://achievementpoint.github.io/achievementpoint/" />
+
+
+<link rel="stylesheet" type="text/css" href="nav.css">
+
+<!-- Font Awesome CDN for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <style>
+
+           .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+
+
+  .calendar-container {
+    background: #fff;
+    padding: 24px 28px 28px 28px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px #ccc;
+    width: 320px;
+  }
+  .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  .calendar-header button {
+    background: #4e73df;
+    color: white;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  #month-year {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  #date-picker-label {
+    margin-bottom: 8px;
+    display: block;
+    font-weight: 600;
+    color: #333;
+  }
+  #date-picker {
+    width: 100%;
+    padding: 6px 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
+  .calendar-weekdays,
+  .calendar-dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+  }
+  .calendar-weekdays div {
+    text-align: center;
+    padding: 8px 0;
+    font-weight: bold;
+    color: #5d5d5d;
+  }
+  .calendar-dates div {
+    text-align: center;
+    padding: 10px 0;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background 0.2s;
+    margin: 2px;
+    position: relative;
+  }
+  .calendar-dates div.today {
+    background: #4e73df;
+    color: #fff;
+    font-weight: bold;
+  }
+  .calendar-dates div.holiday {
+    background: #fce4ec;
+    color: #c2185b;
+    font-weight: 600;
+  }
+  .calendar-dates div.holiday:hover::after {
+    content: attr(data-holiday-name);
+    position: absolute;
+    bottom: 130%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #c2185b;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+    font-size: 12px;
+    pointer-events: none;
+    z-index: 10;
+  }
+  .calendar-dates div:hover:not(.empty):not(.holiday):not(.today) {
+    background: #e3e8fe;
+  }
+  .empty {
+    background: none !important;
+    cursor: default !important;
+  }        
+    </style>
+</head>
+<body>
+<header>
+        <div class="headercontainer">
+		<div class="headerimage">
+		<img src="logo.png" alt="Nature" class="responsive">
+		</div>
+		<div style=" display: flex; place-items: center;">
+        	<h3>Welcome to Achievement Point</h3>
+		</div>
+	</div>
+        <nav>
+            <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+            <a href="directorMessage.html">Director Desk</a>
+	    <a href="Service.html">Service</a>
+            <a href="Resource.html">Resource</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+</header>
+
+<div style="background: #ffcce0; font-weight: Bold; text-decoration: none;">
+<marquee behavior="scroll" direction="left"; onmouseover="this.stop()"; onmouseout="this.start()";"><span class="new-tag">New </span>Admission Open: <a href="contact.html" style="text-decoration: none; color: auto;">Click to Contact</a>; <span class="new-tag">New </span>Offer: Free Registration till 25 Nov. 2025</marquee>
+</div>
+
+<div  style="margin:10px; width: 100%; position: realtive; text-align: center; ">
+<h1>Academic Calender</h1>
+</div>
+<div class="container" style="  display: flex; justify-content: center; align-items: center;">
+
+<div class="calendar-container" style="margin:10px;">
+    <label id="date-picker-label" for="date-picker">Select Date:</label>
+    <input type="date" id="date-picker" />
+    <div class="calendar-header">
+      <button id="prev">&#8592;</button>
+      <span id="month-year"></span>
+      <button id="next">&#8594;</button>
+    </div>
+    <div class="calendar-weekdays" id="calendar-weekdays"></div>
+    <div class="calendar-dates" id="calendar-dates"></div>
+  </div>
+</div>
+
+
+<footer>
+        <p>Quick Link</p>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-around; text-align: left;">
+<div>
+<a href="index.html">> Home</a><br>
+<a href="contact.html">> Contact Us</a><br>
+<a href="faq.html">> FAQs</a><br>
+<a href="Resource.html">> Download</a>
+</div>
+<div>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSfvwfGFmw95xYwrq2krxDrhJig9v-9aaDf8v5CRAZ4rkJDlkQ/viewform?usp=header">> Enquiry form</a><br>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSe8AnLZ_AloSup6BJnFj3qlhyW41QCIG3mqOdYKhzjiWPIScg/viewform?usp=header">> Complaint</a><br>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSclpDhVfpvDhZ5ZQkqZ4gYVOEj4eJlFtncvllX0nipX1bdyug/viewform?usp=header">> Student feedback</a>
+</div>
+</div>
+<a href="https://www.youtube.com/@apointinstitute"><i class="fa-brands fa-youtube" style="font-size:24px; color:Red"></i></a>
+    </footer>
+
+
+<script>
+  const monthNames = [
+    "January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"
+  ];
+  const weekdayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+  // Repetitive national holidays defined by month and day (1-based day)
+  // Format: {month: 0-11, day: 1-31, name: "Holiday Name"}
+  const repetitiveHolidays = [
+    { month: 0, day: 1, name: "New Year" },         // January 01
+    { month: 0, day: 26, name: "Republic Day" },         // January 26
+    { month: 1, day: 12, name: "Guru Ravidash Jayanti" },         // Feb 12
+    { month: 4, day: 20, name: "Foundation Day" },         // May 20
+    { month: 7, day: 15, name: "Independence Day" },    // August 15
+    { month: 9, day: 2, name: "Gandhi Jayanti" },       // October 2
+    { month: 11, day: 25, name: "Christmas Day" }       // December 25
+    // Add more repetitive holidays here
+  ];
+
+  const calendarWeekdays = document.getElementById("calendar-weekdays");
+  const calendarDates = document.getElementById("calendar-dates");
+  const monthYear = document.getElementById("month-year");
+  const prevBtn = document.getElementById("prev");
+  const nextBtn = document.getElementById("next");
+  const datePicker = document.getElementById("date-picker");
+
+  let currentDate = new Date();
+
+  function formatDate(date) {
+    const yyyy = date.getFullYear();
+    const mm = String(date.getMonth() + 1).padStart(2, "0");
+    const dd = String(date.getDate()).padStart(2, "0");
+    return `${yyyy}-${mm}-${dd}`;
+  }
+
+  function isRepetitiveHoliday(date) {
+    return repetitiveHolidays.find(holiday =>
+      holiday.month === date.getMonth() &&
+      holiday.day === date.getDate()
+    );
+  }
+
+  function renderCalendar(date) {
+    monthYear.textContent = `${monthNames[date.getMonth()]} ${date.getFullYear()}`;
+
+    // Render weekdays only once
+    if (calendarWeekdays.children.length === 0) {
+      weekdayNames.forEach(day => {
+        const dayCell = document.createElement("div");
+        dayCell.textContent = day;
+        calendarWeekdays.appendChild(dayCell);
+      });
+    }
+
+    calendarDates.innerHTML = "";
+    const firstDay = new Date(date.getFullYear(), date.getMonth(), 1);
+    const lastDay = new Date(date.getFullYear(), date.getMonth() + 1, 0);
+
+    // Empty slots before first day of month
+    for (let i = 0; i < firstDay.getDay(); i++) {
+      const emptyCell = document.createElement("div");
+      emptyCell.classList.add("empty");
+      calendarDates.appendChild(emptyCell);
+    }
+
+    for (let d = 1; d <= lastDay.getDate(); d++) {
+      const dayCell = document.createElement("div");
+      dayCell.textContent = d;
+
+      const currentDayDate = new Date(date.getFullYear(), date.getMonth(), d);
+
+      // Highlight today
+      const today = new Date();
+      if (
+        d === today.getDate() &&
+        date.getMonth() === today.getMonth() &&
+        date.getFullYear() === today.getFullYear()
+      ) {
+        dayCell.classList.add("today");
+      }
+
+      // Highlight repetitive holidays
+      const holiday = isRepetitiveHoliday(currentDayDate);
+      if (holiday) {
+        dayCell.classList.add("holiday");
+        dayCell.setAttribute("data-holiday-name", holiday.name);
+      }
+
+      calendarDates.appendChild(dayCell);
+    }
+
+    // Sync date picker to current calendar date
+    datePicker.value = formatDate(date);
+  }
+
+  prevBtn.addEventListener("click", () => {
+    currentDate.setMonth(currentDate.getMonth() - 1);
+    renderCalendar(currentDate);
+  });
+
+  nextBtn.addEventListener("click", () => {
+    currentDate.setMonth(currentDate.getMonth() + 1);
+    renderCalendar(currentDate);
+  });
+
+  datePicker.addEventListener("change", (e) => {
+    const selected = new Date(e.target.value);
+    if (!isNaN(selected)) {
+      currentDate = selected;
+      renderCalendar(currentDate);
+    }
+  });
+
+  // Initial calendar render
+  renderCalendar(currentDate);
+</script>
+</body>
+</html>
