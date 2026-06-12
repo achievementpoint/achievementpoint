@@ -1,0 +1,132 @@
+/* Section Base Styles */
+.programs-section {
+    padding: 60px 20px;
+    background-color: #f9fafb;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #1a202c;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #4a5568;
+    margin-bottom: 40px;
+}
+
+/* Grid Layout */
+.programs-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+/* Program Cards */
+.program-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.program-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Highlighted Card (Class 9-10) */
+.program-card.highlighted {
+    border: 2px solid #2563eb;
+}
+
+.card-badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #2563eb;
+    color: #ffffff;
+    padding: 4px 14px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+/* Card Content */
+.card-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.program-card h3 {
+    font-size: 1.5rem;
+    color: #1a202c;
+    margin-bottom: 5px;
+}
+
+.program-tag {
+    color: #2563eb;
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.program-desc {
+    color: #4a5568;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    min-height: 75px; /* Keeps buttons aligned */
+}
+
+/* Call to Action Button */
+.card-btn {
+    display: inline-block;
+    width: 100%;
+    padding: 12px 0;
+    background-color: #1e293b;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+.highlighted .card-btn {
+    background-color: #2563eb;
+}
+
+.card-btn:hover {
+    background-color: #0f172a;
+}
+
+.highlighted .card-btn:hover {
+    background-color: #1d4ed8;
+}
+
+/* Responsive Tablet & Desktop Queries */
+@media (min-width: 768px) {
+    .programs-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .section-title {
+        font-size: 2.5rem;
+    }
+}
